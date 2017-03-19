@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #wrapper {
+        display: flex;
+        /*align-items: flex-end;*/
+        /*flex-direction: column;*/
+      }
+      #wrapper div ,#wrapper-2 div{
+        border: 1px #ccc solid;
+        padding: 10px;
+      }
+      .box-1{
+        flex: 1;
+        /*order: 3;*/
+      }
+      .box-2{
+        flex: 2;
+        /*order: 1;*/
+      }
+      .box-3{
+        flex: 1;
+        /*order: 2*/
+      }
+      #wrapper-2 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrapper-2-box{
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="box-1">
+        <h3>box one</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+      <div class="box-2">
+        <h3>box two</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+      <div class="box-3">
+        <h3>box three</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+    </div>
+    <div id="wrapper-2">
+      <div class="wrapper-2-box">
+        <h3>box one</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+      <div class="wrapper-2-box">
+        <h3>box two</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+      <div class="wrapper-2-box">
+        <h3>box three</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+    </div>
+  </body>
+</html>
