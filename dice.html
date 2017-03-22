@@ -13,7 +13,7 @@
         }
         [class$="box"]{
             display: flex;
-            margin: 20px;
+            margin: 10px;
             width:104px;
             height:104px;
             border-radius:4px;
@@ -66,6 +66,41 @@
             justify-content: space-between;
         }
 
+        .dice-5-box {
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .dice-5-box .row {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .dice-5-box .row:nth-of-type(2) {
+            justify-content: center;
+        }
+
+        .dice-6-box {
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .dice-6-box .row {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        /*横排6个跟上面共用，html中改一下就行了*/
+
+        /*9个都不用改，直接用6个的样式，为了好看，这里还是列一下*/
+        .dice-9-box {
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .dice-9-box .row {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
     </style>
 </head>
 <body>
@@ -92,6 +127,66 @@
                 <span class="spot">4</span>
             </div>
         </div>
+        <div class="dice-5-box">
+            <div class="row">
+                <span class="spot">1</span>
+                <span class="spot">2</span>
+            </div>
+            <div class="row">
+                <span class="spot">5</span>
+            </div>
+            <div class="row">
+                <span class="spot">3</span>
+                <span class="spot">4</span>
+            </div>
+        </div>
+        <div class="dice-6-box">
+            <div class="row">
+                <span class="spot">1</span>
+                <span class="spot">2</span>
+            </div>
+            <div class="row">
+                <span class="spot">3</span>
+                <span class="spot">4</span>
+            </div>
+            <div class="row">
+                <span class="spot">5</span>
+                <span class="spot">6</span>
+            </div>
+        </div>
+
+        <!--横排-->
+        <div class="dice-6-box">
+            <div class="row">
+                <span class="spot">1</span>
+                <span class="spot">2</span>
+                <span class="spot">3</span>
+            </div>
+            <div class="row">
+                <span class="spot">4</span>
+                <span class="spot">5</span>
+                <span class="spot">6</span>
+            </div>
+        </div>
+
+        <div class="dice-9-box">
+            <div class="row">
+                <span class="spot">1</span>
+                <span class="spot">2</span>
+                <span class="spot">3</span>
+            </div>
+            <div class="row">
+                <span class="spot">4</span>
+                <span class="spot">5</span>
+                <span class="spot">6</span>
+            </div>
+            <div class="row">
+                <span class="spot">7</span>
+                <span class="spot">8</span>
+                <span class="spot">9</span>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
