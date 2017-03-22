@@ -104,3 +104,5 @@ a: 首先要让box的宽度小于容器，这样才有空间 `width: 30%`
 有了上面的基础后，才能使用align-content这个多行对齐的属性。
 
 最后让子元素也成为flex，然后让他的子元素justify对齐就行了
+
+mark一下：代码中的column应该是row才对
