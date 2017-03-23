@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>holyGrail</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #holy-grail {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        header,footer {
+            flex: 0 0 10vh;
+            background-color: #cccccc;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+        }
+        .main .center {
+            flex: 1;
+            background-color: aquamarine;
+        }
+        .main nav, aside {
+            flex-basis: 12em;
+            background-color: antiquewhite;
+        }
+
+
+    </style>
+</head>
+<body id="holy-grail">
+    <header>header</header>
+    <div class="main">
+        <nav>navigate on left</nav>
+        <div class="center">center</div>
+        <aside>aside on right</aside>
+    </div>
+    <footer>footer</footer>
+</body>
+</html>
