@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #wrapper {
+            max-width: 1280px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+        }
+        #wrapper div {
+            background-color: #cccccc;
+        }
+        .left, .center, .right {
+            flex-basis: 30%;
+        }
+
+        @media (max-width: 760px) {
+            #wrapper {
+                flex-wrap: wrap;
+            }
+            .left, .center, .right {
+                flex-basis: 100%;
+                margin-bottom: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="left">
+            <h2>Nec, etiam. Sit magnis phasellus rhoncus</h2>
+            <p>Nisi et dolor ultricies penatibus scelerisque velit turpis, amet massa vel magna! Lectus
+                dapibus etiam? Facilisis. Scelerisque et ridiculus in? Vel velit proin placerat! Tincidunt nunc ac nunc,
+                etiam nisi, urna cum parturient eros et. Parturient odio magna dictumst, facilisis! Mid in arcu aliquam vel,
+                magnis nisi odio purus rhoncus etiam et scelerisque a enim porta turpis? Purus ut penatibus purus urna non,
+                magna parturient? Elementum? Scelerisque purus non vut magnis cras, lectus quis non egestas risus
+                scelerisque nec velit a auctor massa porta, vel mattis facilisis ultricies. Est tristique? Porta arcu quis
+                augue velit et, facilisis augue parturient placerat ut porta lectus, ac tincidunt mid, vut nisi, penatibus
+                tristique. mauris placerat egestas porta.</p>
+        </div>
+        <div class="center">
+            <h2>Nec, etiam. Sit magnis phasellus rhoncus</h2>
+            <p>Nisi et dolor ultricies penatibus scelerisque velit turpis, amet massa vel magna! Lectus
+                dapibus etiam? Facilisis. Scelerisque et ridiculus in? Vel velit proin placerat! Tincidunt nunc ac nunc,
+                etiam nisi, urna cum parturient eros et. Parturient odio magna dictumst, facilisis! Mid in arcu aliquam vel,
+                magnis nisi odio purus rhoncus etiam et scelerisque a enim porta turpis? Purus ut penatibus purus urna non,
+                vel mattis facilisis ultricies. Est tristique? Porta arcu quis
+                augue velit et, facilisis augue parturient placerat ut porta lectus, ac tincidunt mid, vut nisi, penatibus
+                tristique. mauris placerat egestasrt poa.</p>
+        </div>
+        <div class="right">
+            <h2>Nec, etiam. Sit magnis phasellus rhoncus</h2>
+            <p>Nisi et dolor ultricies penatibus scelerisque velit turpis, amet massa vel magna! Lectus
+                dapibus etiam? Facilisis. Scelerisque et ridiculus in? Vel velit proin placerat! Tincidunt nunc ac nunc,
+                etiam nisi, urna cum parturient eros et. Parturient odio magna dictumst, facilisis! Mid in arcu aliquam vel,
+                magnis nisi odio purus rhoncus etiam et scelerisque a enim porta turpis? Purus ut penatibus purus urna non,
+                vel mattis facilisis ultricies.
+                augue velit et, facilisis augue parturient placerat ut porta lectus, ac tincidunt mid, vut nisi, penatibus
+                tristique. mauris placerat egestasrt poa.</p>
+        </div>
+    </div>
+</body>
+</html>
