@@ -54,3 +54,6 @@ flex课程的案例
 6. align-self default auto,继承父， 没有父 则 stretch.
 
 
+## 几个更简单的技巧
+1. flex-wrap: wrap 视口缩小时自动换行（当然换多少不可控）
+2. item 使用 margin：auto； 自动居中（x,y,axis,神奇!!）
