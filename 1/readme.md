@@ -25,3 +25,11 @@ flex课程的案例
 - 当main axis 为 column， justify content对应为 y axis
 
 >这是要注意的地方，main axis改变， 对齐的方式跟着变。
+
+## align items
+- content 必须有高度， 否则不生效。
+- 有高的content， 默认stretch整个content。
+
+## align content
+- items 默认填充content 高度，而align content需要多行
+- 因此， 让items 的width 总和 大于一行， 给content加 wrap后， 可实现换行。
