@@ -33,3 +33,24 @@ flex课程的案例
 ## align content
 - items 默认填充content 高度，而align content需要多行
 - 因此， 让items 的width 总和 大于一行， 给content加 wrap后， 可实现换行。
+- 默认值是stretch。
+
+## 可以发现，content 的每个属性都有默认值。
+1. flex-direction: row;
+2. flex-wrap: nowrap;
+3. flex-flow: row, nowrap;
+4. justify-content: flex-star;
+5. align-items: stretch; 
+6. align-content: stretch;
+
+5,6同一时间只有一个起作用。
+
+## items 属性
+1. order default 0；
+2. flex-grow default 0;如何分配一行的空余空间。
+3. flex-shrink default 0; 
+4. flex-basis default auto;
+5. flex 简写上面三项。 auto | none
+6. align-self default auto,继承父， 没有父 则 stretch.
+
+
