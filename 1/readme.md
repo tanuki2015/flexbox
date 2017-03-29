@@ -61,5 +61,6 @@ flex课程的案例
 
 ## aPage
 1. 布局要成为弹性的，则不能设置如，width：1000px； 这种。但可以设置max-width：1000px；
-2. img也需要设置width：100%, 否则不能弹性。
+2. img也需要设置width：100%, 必需是相对单位, 否则不能弹性。
 3. 在toggle一个nav的时候，.showNav要写在优先级高的媒体查询中，否则级别低了无效。
+4. 当不能对齐<a>中的item时候，给他加一个span，<a>作为content，再对齐。

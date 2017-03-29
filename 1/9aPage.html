@@ -15,6 +15,7 @@
         body {
             height: 100%;
             background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+            color: white;
         }
 
         .toggleNav {
@@ -49,6 +50,8 @@
             text-decoration: none;
             display: block;
             padding: 10px 0;
+            color: white;
+            transition: 0.5s;
         }
         a:hover {
             background:rgba(0,0,0,0.3);
@@ -105,7 +108,7 @@
         </header>
 
         <nav>
-            <a href="#" class="toggleNav"><i class="fa fa-align-justify"></i>menu</a>
+            <a href="#" class="toggleNav"><i class="fa fa-align-justify">&nbsp;</i>menu</a>
             <ul class="flex-nav">
                 <li><a href="#">item 01</a></li>
                 <li><a href="#">item 02</a></li>
@@ -145,11 +148,13 @@
 <script>
     document.onreadystatechange = function () {
         if (document.readyState == "complete") {
+
             const nav = document.querySelector('nav a');
             const ul = document.querySelector('ul');
             nav.addEventListener('click', function(){
                 ul.classList.toggle('showNav');
             });
+
         }
     }
 </script>
