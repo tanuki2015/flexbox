@@ -57,3 +57,9 @@ flex课程的案例
 ## 几个更简单的技巧
 1. flex-wrap: wrap 视口缩小时自动换行（当然换多少不可控）
 2. item 使用 margin：auto； 自动居中（x,y,axis,神奇!!）
+
+
+## aPage
+1. 布局要成为弹性的，则不能设置如，width：1000px； 这种。但可以设置max-width：1000px；
+2. img也需要设置width：100%, 否则不能弹性。
+3. 在toggle一个nav的时候，.showNav要写在优先级高的媒体查询中，否则级别低了无效。

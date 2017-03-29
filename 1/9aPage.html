@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01</title>
+    <link rel="stylesheet" href="../cssReset.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+        }
+
+        .toggleNav {
+            display: none;
+        }
+
+        #wrapper {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, nav{
+            margin: 20px 0;
+            background:rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        section, footer {
+            margin: 20px 0;
+            background:rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 20px;
+        }
+
+        section img {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+        a:hover {
+            background:rgba(0,0,0,0.3);
+        }
+
+        .flex-nav {
+            display: flex;
+        }
+
+        .flex-nav li {
+            flex: 3 1 auto;
+        }
+
+        .flex-nav .social {
+            flex: 1;
+        }
+
+        @media all and (max-width: 760px) {
+            #wrapper * {
+                order: 2;
+            }
+            #wrapper nav {
+                order: 1;
+            }
+            .flex-nav {
+                flex-wrap: wrap;
+            }
+            .flex-nav li {
+                flex: 1 1 50%;
+            }
+        }
+
+        @media all and (max-width: 380px) {
+            .flex-nav li {
+                flex: 100%;
+            }
+            .toggleNav {
+                display: block;
+            }
+            .flex-nav {
+                display: none;
+            }
+            .flex-nav.showNav {
+                display: flex;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="#">what the flex box!!</a></h1>
+        </header>
+
+        <nav>
+            <a href="#" class="toggleNav"><i class="fa fa-align-justify"></i>menu</a>
+            <ul class="flex-nav">
+                <li><a href="#">item 01</a></li>
+                <li><a href="#">item 02</a></li>
+                <li><a href="#">item 03</a></li>
+                <li><a href="#">item 04</a></li>
+                <li><a href="#">item 05</a></li>
+                <li><a href="#">item 06</a></li>
+                <li class="social"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-facebook"></i> </a></li>
+                <li class="social"><a href="#"><i class="fa fa-github"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <img src="http://lorempixel.com/1000/600/abstract" alt="picture">
+        </section>
+
+        <section class="detail">
+            <p>A simple video course to help you learn flex!</p>
+            <p>Sign up today to grab all the videos and exercises!</p>
+        </section>
+
+        <section class="signup">
+            <form action="">
+                <input type="text" placeholder="your name">
+                <input type="email" placeholder="your email">
+                <input type="submit" value="Sign me up!">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; Wes Bos</p>
+        </footer>
+    </div>
+</body>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+            const nav = document.querySelector('nav a');
+            const ul = document.querySelector('ul');
+            nav.addEventListener('click', function(){
+                ul.classList.toggle('showNav');
+            });
+        }
+    }
+</script>
+</html>
